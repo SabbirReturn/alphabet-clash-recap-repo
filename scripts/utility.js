@@ -29,6 +29,18 @@ function setInnerText(elementId,value){
 }
 function setBackGroundColor(elementId){
     let element = document.getElementById(elementId);
-    let backgroundColor = element.classList.add('bg-orange-400');
-    return backgroundColor;
+    element.classList.add('bg-orange-400')
+    // let backgroundColor = element.classList.add('bg-orange-400');
+    // return backgroundColor;
+}
+function removeBackGroundColor(elementId){
+    let element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-400')
+}
+
+function getElementValueById(elementId){
+    let element = document.getElementById(elementId);
+    let elementValueText = element.innerText;
+    let value = parseInt(elementValueText);
+    return value;
 }

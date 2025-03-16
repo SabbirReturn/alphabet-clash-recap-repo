@@ -11,12 +11,22 @@ function continueGame(){
 }
 function keyUpPressBtn(event){
     let playerPress = event.key;
-    console.log(playerPress);
     let screen = document.getElementById('screen');
     let currentAlphabet = screen.innerText
     let expectedAlphabet = currentAlphabet.toLowerCase();
-    console.log(expectedAlphabet);
-
+    if(playerPress === expectedAlphabet){
+        let scoreElementId = document.getElementById('score');
+        let scoreElement = scoreElementId.innerText;
+        let score = parseInt(scoreElement);
+        let updateScore = score +1;
+        let oldScore = document.getElementById('score');
+        oldScore.innerText = updateScore;
+        continueGame();
+        removeBackGroundColor(expectedAlphabet);
+    }
+    else{
+        
+    }
 
     
 }

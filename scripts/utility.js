@@ -30,8 +30,6 @@ function setInnerText(elementId,value){
 function setBackGroundColor(elementId){
     let element = document.getElementById(elementId);
     element.classList.add('bg-orange-400')
-    // let backgroundColor = element.classList.add('bg-orange-400');
-    // return backgroundColor;
 }
 function removeBackGroundColor(elementId){
     let element = document.getElementById(elementId);
@@ -43,4 +41,9 @@ function getElementValueById(elementId){
     let elementValueText = element.innerText;
     let value = parseInt(elementValueText);
     return value;
+}
+function getElementTextById(elementID){
+    let element = document.getElementById(elementID);
+    let text = element.innerText;
+    return text;
 }

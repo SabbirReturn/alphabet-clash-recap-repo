@@ -80,7 +80,7 @@
                     <button class="btn bg-fuchsia-400 text-white ">
                         <p>Life</p>
                         <img src="images/heart.png" alt="">
-                        <span>5</span>
+                        <span id="life">5</span>
                       </button>
                       <button class="btn bg-indigo-400 text-white">
                         <p>Score</p>
@@ -93,14 +93,14 @@
         <!-- ************************PlayGround End************************ -->
 
         <!-- ***********************Score start*************************** -->
-        <section id="score" class="hidden">
+        <section id="scoreSection" class="hidden">
             <div class="flex justify-center items-center min-h-screen ">
                 <div class=" bg-[#FFFFFF33] flex flex-col justify-center items-center rounded-xl p-10 gap-y-5">
                     <h1 class="text-5xl">
                         <span class="poppins-extrabold">Score:</span>
-                        <span class="poppins-medium">14</span>
+                        <span id="updatedScore" class="poppins-medium">14</span>
                     </h1>
-                    <button class="btn btn-primary bg-[#FFFFFF] text-[#010313]">Play Now</button>
+                    <button onclick="play()" class="btn btn-primary bg-[#FFFFFF] text-[#010313]">Play Now</button>
                     <p class="poppins-medium">Practice will make you Pro</p>
                 </div>
             </div>
